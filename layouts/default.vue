@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -22,6 +22,24 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.giant-button {
+  display: inline-block;
+  border-radius: 4px;
+  border: 2px solid #35495e;
+  color: #35495e;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-size: 24px;
+  font-weight: 800;
+  background-color: rgb(216, 216, 216);
+  opacity: 0.8;
+
+  &:hover {
+    color: #fff;
+    background-color: #35495e;
+  }
 }
 
 .button--green {

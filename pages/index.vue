@@ -1,25 +1,17 @@
 <template>
   <div class="container">
-    <div>
+    <div class="toolbar">
       <Logo />
-      <h1 class="title">click-travel</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+    </div>
+    <div class="content">
+      <div>
+        <h1 class="title">Choose your dream destination...</h1>
+        <div class="links">
+          <a href="#" class="giant-button"> San Francisco, USA </a>
+          <a href="#" class="giant-button"> Québec, Canada </a>
+          <a href="#" class="giant-button"> Bora Bora, Polynésie </a>
+          <a href="#" class="giant-button"> Torres del Paine, Chile </a>
+        </div>
       </div>
     </div>
   </div>
@@ -29,35 +21,48 @@
 export default {}
 </script>
 
-<style>
+<style lang="scss">
 .container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.toolbar {
+  height: 80px;
+  background-color: #35495e;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  background-image: url('~assets/airplane.jpg');
+  background-size: cover;
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
+  font-weight: 500;
+  font-size: 58px;
+  color: #fff;
   letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+  text-shadow: 1px 1px 4px #000;
+  text-align: center;
 }
 
 .links {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
   padding-top: 15px;
+  & > * {
+    margin: 5px;
+  }
 }
 </style>

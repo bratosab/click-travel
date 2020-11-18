@@ -2,7 +2,7 @@
 
 **Sujet** : Récupérer un billet d'avion pour aller à la destination de vos rêves
 
-(./assets/screenshot.jpeg)
+![screenshot](/assets/screenshot.png)
 
 # Partie 1 (1h)
 
@@ -25,7 +25,7 @@ http://travel-api.clicksomeone.com/tickets?filter=%7B%0A%20%20%22offset%22%3A%20
 # Partie 3
 Au clic sur un billet de la liste, affichage du billet avec le même design que le billet suivant :
 
-(/assets/ticket-example.jpeg)
+![ticket](/assets/ticket-example.jpg)
 
 Avec les champs suivant :
 -le nom du passager
@@ -57,7 +57,7 @@ Liens vers l'image docker : https://hub.docker.com/r/bratosab/click-travel-api
 
 le back est disponible sur internet, mais vous pouvez l'hoster chez vous si vous le souhaiter
 
-## Vous avez jusque Midi
+## Vous avez jusque Midi bon courage
 
 ## Build Setup
 

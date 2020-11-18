@@ -6,11 +6,11 @@
 .logo {
   animation: 1s appear;
   margin: auto;
-  background-image: url('~assets/logo.png');
+  background-image: url('~assets/logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  height: 80px;
-  margin-left: 12px;
+  height: 60px;
+  margin: 10px 12px;
 }
 
 @keyframes appear {

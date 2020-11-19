@@ -21,7 +21,7 @@
 export default {}
 </script>
 
-<style lang="scss">
+<style>
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -61,8 +61,9 @@ export default {}
   align-items: center;
   justify-content: center;
   padding-top: 15px;
-  & > * {
-    margin: 5px;
-  }
+}
+
+.links > * {
+  margin: 5px;
 }
 </style>
